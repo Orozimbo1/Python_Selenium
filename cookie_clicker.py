@@ -18,11 +18,9 @@ class CookieCliker:
         self.driver.maximize_window()
 
     def abrir_site(self):
-        print('oi')
         time.sleep(2)
         self.driver.get(self.SITE_LINK)
         time.sleep(8)
-        print('oi')
 
     def selecionar_idioma(self):
         self.driver.find_element(By.ID, 'langSelect-PT-BR').click()
